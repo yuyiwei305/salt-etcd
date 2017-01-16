@@ -18,6 +18,9 @@ config-etcd:
       CLUSTER_IP1: {{ pillar['etcd']['CLUSTER_IP1'] }}
       CLUSTER_IP2: {{ pillar['etcd']['CLUSTER_IP2'] }}
       CLUSTER_IP3: {{ pillar['etcd']['CLUSTER_IP3'] }}
+      HOSTNAME1:  {{ pillar['etcd']['HOSTNAME1'] }}
+      HOSTNAME2:  {{ pillar['etcd']['HOSTNAME2'] }}
+      HOSTNAME3:  {{ pillar['etcd']['HOSTNAME3'] }}
       MY_IP: {{ grains['fqdn_ip4'][0] }}
       MY_HOSTNAME: {{ grains['fqdn'] }}
 etcd-server:
